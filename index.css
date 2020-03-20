@@ -1,0 +1,220 @@
+/* background body */
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+.bg { 
+    /* The image used */
+    background-image: url("https://wallpaperplay.com/walls/full/8/c/9/20897.jpg");
+
+    min-height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 5em;
+}
+
+.page-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* columns */
+.col-sm-8 {
+    color: white;
+}
+.col-sm-4 {
+    border: 1px black solid;
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+.col-sm-3 {
+    border: 1px green solid;
+    background-color: pink;
+    text-align: center;
+}
+
+/* css buttons */
+button {
+    padding: 5 40;
+    margin-right: 15;
+    border: 2px solid gold;
+}
+button:hover {
+    background-color: gold;
+}
+.redbutton {
+    border: 2px solid red;
+}
+.redbutton:hover {
+    background-color: red;
+}
+.bluebutton {
+    border: 2px solid blue;
+}
+.bluebutton:hover {
+    background-color: blue;
+}
+
+/* font for headers, list, p */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: gold;
+}
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    color: green;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+.p1, h3, .p2 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+.p1 {
+    text-align: center;
+}
+li {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/* tables */
+table, th, td {
+    border: black solid 1px;
+}
+table{
+    background-color: gold;
+    padding: 5px;
+}
+th, td {
+    background-color: white;
+    padding: 5px;
+}
+
+/* places header */
+#placesHeader {
+    color: gold;
+}
+
+/* linkbox image */
+#linkbox:hover #linkImg {
+    transform: scale(1.25);
+}
+#linkbox {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+#linkImg {
+    width: 100%;
+    transition: all 1.5s ease-in-out;
+}
+
+/* forms */
+form input, form label, form select {
+    display: block;
+}
+form input.inline {
+    display: inline-block;
+}
+
+/* cards */
+.card-image-top {
+    height: 30vh;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+.card {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* shadows */
+.boxshadow {
+    box-shadow: 5px 0px 5px 0px white;
+}
+
+/* animations */
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+ @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+.text-pop-up-top {
+	-webkit-animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes text-pop-up-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+  
